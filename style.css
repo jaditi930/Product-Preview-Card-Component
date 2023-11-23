@@ -15,14 +15,30 @@ body{
     font-family: 'Fraunces', serif;
 }
 .card{
-    height:60%;
+    height:auto;
     width: 40%;
     background-color: hsl(0, 0%, 100%);
     display:flex;
 }
 .image{
     width: 50%;
-    height: 100%;
+    height: auto;
+}
+.perfume{
+    font-family: 'Montserrat',sans-serif;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 5px;
+    font-size: 14px;
+}
+.heading{
+    color: hsl(212, 21%, 14%);
+    font-weight: 800;
+    font-size: 30px;
+}
+.para{
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat',sans-serif;
+    line-height: 1.5;
 }
 .info{
     display: flex;
@@ -30,6 +46,17 @@ body{
 }
 .pad{
 padding: 10px 40px;
+}
+.price1{
+    font-size: 30px;
+    color: hsl(158, 36%, 37%);
+    font-weight: 800;
+    padding-right: 20px;
+}
+.price2{
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    padding-top: 10px;
 }
 .button{
     background-color: hsl(158, 36%, 37%);
@@ -42,6 +69,22 @@ padding: 10px 40px;
     text-align: center;
 
 }
-.price{
+.button:hover{
+    background-color: hsl(160, 53%, 14%);
+}
+.flex{
     display: flex;
+}
+
+@media (max-width:375px) {
+    body{
+        height: 100%;
+    }
+    .card{
+        width:99%;
+        flex-direction: column;
+    }
+    .image{
+        width: 100%;
+    }
 }
