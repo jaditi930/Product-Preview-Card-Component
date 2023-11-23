@@ -15,8 +15,11 @@ body{
     font-family: 'Fraunces', serif;
 }
 .card{
-    height:auto;
+    height:60%;
+    min-height: 500px;
     width: 40%;
+    min-width:500px;  
+    /* min-width=max(width,min-width) */
     background-color: hsl(0, 0%, 100%);
     display:flex;
 }
@@ -76,15 +79,21 @@ padding: 10px 40px;
     display: flex;
 }
 
-@media (max-width:375px) {
+@media (max-width:550px) {
     body{
         height: 100%;
     }
     .card{
         width:99%;
         flex-direction: column;
+        min-width:0px;
+
     }
     .image{
         width: 100%;
     }
+    .perfume,.heading{
+        text-align: center;
+    }
+    
 }
